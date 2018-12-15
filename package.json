@@ -1,0 +1,34 @@
+{
+  "name": "mongoscraper",
+  "version": "1.0.0",
+  "description": "homework assignment using mongo and webscrapers",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LexChuthor/mongoScraper.git"
+  },
+  "keywords": [
+    "express",
+    "express-handlebars",
+    "mongoose",
+    "cheerio",
+    "axios"
+  ],
+  "author": "Patrick Chu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LexChuthor/mongoScraper/issues"
+  },
+  "homepage": "https://github.com/LexChuthor/mongoScraper#readme",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "cheerio": "^1.0.0-rc.2",
+    "express": "^4.16.4",
+    "express-handlebars": "^3.0.0",
+    "mongoose": "^5.4.0",
+    "npm": "^6.5.0"
+  }
+}
