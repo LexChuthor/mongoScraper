@@ -14,15 +14,6 @@ $(document).ready(function(){
     });
   })
 })
-// $.getJSON("api/articles", function (data) {
-//   // For each one
-//   for (var i = 0; i < data.length; i++) {
-//     // Display the apropos information on the page
-//     $("#articles").append(`<a href='${data[i].link}'>${data[i].title}</a>
-//                             <p>${data[i].teaser}</p>
-//                             <button  data-id='${data[i]._id}' id="noteButton">Comment</button><br />`);
-//   }
-// });
 
 
 // Whenever someone clicks a p tag
