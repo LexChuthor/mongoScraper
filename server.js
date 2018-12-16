@@ -7,7 +7,7 @@ var mongoose = require("mongoose");
 // It works on the client and on the server
 var axios = require("axios");
 var cheerio = require("cheerio");
-
+var exphbs = require("express-handlebars");
 // Require all models
 var db = require("./models");
 
@@ -17,7 +17,8 @@ var PORT = process.env.PORT || 3000;
 var app = express();
 
 // Configure middleware
-
+app.engine("handlebars", exphbs({ defaultLayout: "main" }));
+app.set("view engine", "handlebars");
 // Use morgan logger for logging requests
 // app.use(logger("dev"));
 // Parse request body as JSON
@@ -74,7 +75,7 @@ app.get("/scrape", function(req, res) {
 });
 
 app.get("/", function(req, res){
-  res.sendFile(path.join(__dirname, "index.html"));
+  res.render("index");
 });
 
 app.put("/api/notes/:id", function(req, res){
