@@ -85,7 +85,7 @@ $(document).on("click", ".articleComment", function () {
 // When you click the savenote button
 $(document).on("click", "#savenote", function () {
   // Grab the id associated with the article from the submit button
-  var thisId = $(this).attr("data-id");
+  let thisId = $(this).attr("data-id");
 
   // Run a POST request to change the note, using what's entered in the inputs
   $.ajax({
