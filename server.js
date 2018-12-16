@@ -73,6 +73,10 @@ app.get("/scrape", function(req, res) {
   });
 });
 
+app.get("/", function(req, res){
+  res.sendFile(path.join(__dirname, "index.html"));
+});
+
 app.put("/api/notes/:id", function(req, res){
   db.Note.findOneAndUpdate({ _id: req.params.id }, req.body)
   .then(function(){
